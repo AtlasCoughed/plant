@@ -7,18 +7,18 @@
 #include "Adafruit_TMP006.h"
 
 Adafruit_TMP006 tmp006(0x41); // start with a diferent i2c address!
-char ssid[] = "MakerSquare";  //  your network SSID (name)
-char pass[] = "alwaysbecommitting"; // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "<SSID>";  //  your network SSID (name)
+char pass[] = "<PASSWORD>"; // your network password (use for WPA, or use as key for WEP)
 //int keyIndex = 0; // your network key Index number (needed only for WEP)
 
 int status = WL_IDLE_STATUS;
 SimpleTimer timer;
 
-char deviceId[] = "f990e644186d0c7ecde4eb454934ae2f"; // Device you want to push to
-char streamWater[] = "water"; // Stream you want to push to
-char streamLight[] = "light"; // Stream you want to push to
-char streamTemp[] = "temp"; // Stream you want to push to
-char m2xKey[] = "7f4b3ddf06944e06a87d0cc8aef754ad"; // Your M2X access key
+char deviceId[] = "<DEVICE APIKEY>"; // Device you want to push to
+char streamWater[] = "<STREAM1>"; // Stream you want to push to
+char streamLight[] = "<STREAM2>"; // Stream you want to push to
+char streamTemp[] = "<STREAM3>"; // Stream you want to push to
+char m2xKey[] = "<M2X APIKEY>"; // Your M2X access key
 
 WiFiClient client;
 
@@ -123,4 +123,3 @@ void GetTempValue(){
   Serial.println(response);
   delay(100);
 }
-

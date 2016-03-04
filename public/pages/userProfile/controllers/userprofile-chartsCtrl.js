@@ -51,7 +51,7 @@ angular.module('App.userprofile-chartsCtrl').controller('ModalChartsCtrl', funct
             var currentDevice = result.deviceName;
             var waterData = [];
 
-            for(var i = 0; i < chartData.length; i+=300){
+            for(var i = 0; i < chartData.length; i++){
                 var year = parseInt(chartData[i].timestamp.slice(0,4));
                 var month = parseInt(chartData[i].timestamp.slice(5,7)) - 1;
                 var day = parseInt(chartData[i].timestamp.slice(8,10));
@@ -165,7 +165,7 @@ angular.module('App.userprofile-chartsCtrl').controller('ModalChartsCtrl', funct
             var currentDevice = result.deviceName;
             var lightData = [];
 
-            for(var i = 0; i < chartData.length; i+=300){
+            for(var i = 0; i < chartData.length; i++){
               var year = parseInt(chartData[i].timestamp.slice(0,4));
               var month = parseInt(chartData[i].timestamp.slice(5,7)) - 1;
               var day = parseInt(chartData[i].timestamp.slice(8,10));
@@ -269,7 +269,7 @@ angular.module('App.userprofile-chartsCtrl').controller('ModalChartsCtrl', funct
             var currentDevice = result.deviceName;
             var tempData = [];
 
-            for(var i = 0; i < chartData.length; i+=300){
+            for(var i = 0; i < chartData.length; i++){
               var year = parseInt(chartData[i].timestamp.slice(0,4));
               var month = parseInt(chartData[i].timestamp.slice(5,7)) - 1;
               var day = parseInt(chartData[i].timestamp.slice(8,10));
